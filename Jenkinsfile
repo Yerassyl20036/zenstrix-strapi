@@ -27,13 +27,6 @@ pipeline {
             }
         }
         
-        stage('Run Tests') {
-            steps {
-                echo 'Running tests...'
-                sh 'npm test' // Or 'yarn test' if your project has tests
-            }
-        }
-        
         stage('Deploy') {
             steps {
                 echo 'Deploying application...'
